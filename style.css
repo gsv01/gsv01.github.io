@@ -1,0 +1,439 @@
+
+/* Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#part1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  background-image: url('pattern.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+
+#part2{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#photo{
+  width: 300px;
+  height: 300px;
+  background-image: url('me.png');
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid #34deeb;
+  background-size: cover;
+  align-self: center;
+  animation: rotate 10s infinite;
+}
+
+#photo:hover{
+  animation-play-state: paused;
+}
+@keyframes  rotate {
+  0%{transform: rotate(360deg)}
+}
+
+
+
+#clickme{
+  align-self: center;
+  padding: 30px;
+  background-color: #34deeb;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  color: white;
+}
+
+
+#clickme:hover{
+  background-color: black;
+  transition: .4s;
+  cursor: pointer;
+}
+
+
+
+#container{
+  display: none;
+  overflow-y: scroll;
+  animation: fadein 6s 1;
+}
+
+@keyframes fadein{
+  0%{opacity: 0.1;}
+}
+
+
+
+#part3{
+  position: fixed;
+  width :100%;
+  top: 0%;
+  left: 0%;
+  padding: 50px;
+  background-color: black;
+  background-image: url('pattern.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#intro{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins',  sans-serif;
+  text-align: left;
+  margin-bottom: 100px;
+  padding-top: 250px;
+}
+
+#intro p{
+  font-weight: lighter;
+  font-size: 18px;
+}
+#photo2{
+  width: 100px;
+  height: 100px;
+  background-image: url('me.png');
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid #34deeb;
+  background-size: cover;
+  align-self: center;
+  animation: rotate 10s infinite;
+}
+
+#photo2:hover{
+  animation-play-state: paused;
+}
+
+#education{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins',  sans-serif;
+  text-align: left;
+  margin-bottom: 100px;
+  font-size: 18px;
+}
+
+#education table{
+  margin-bottom: 30px;
+}
+#education table tr td{font-weight: lighter}
+
+
+#skills{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins',  sans-serif;
+  text-align: left;
+  margin-bottom: 100px;
+  font-size: 18px;
+}
+
+#skills_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#skills_container div{
+  margin-right: 10px;
+  font-weight: lighter;
+}
+
+#projects{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins',  sans-serif;
+  text-align: left;
+  margin-bottom: 100px;
+  font-size: 18px;
+}
+
+#projects_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#projects_container div{
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+#projects h4{
+  font-weight: lighter;
+}
+
+
+
+#hireme{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Poppins',  sans-serif;
+  display: inline-block;
+  margin-bottom: 300px;
+  font-size: 18px;
+}
+
+#photo3{
+  width:100%;
+}
+
+#contact_button{
+  align-self: center;
+  padding: 30px;
+  width: 100px;
+  background-color: #c5b8ff;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+#contact_button:hover{
+  background-color: black;
+  transition: .4s;
+  cursor: pointer;
+}
+
+
+footer{
+  padding: 100px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+
+
+/* Extra */
+
+
+
+#more{
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width :50px;
+  height:50px;
+  background-color: black;
+  background-image: url("more.webp");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+#more_pop{
+  position: fixed;
+  padding: 100px;
+  top:0;
+  right:0;
+  width: 30%;
+  background-color: white;
+  box-shadow: 0px 1px 3px black;
+  border-radius: 0 0  0  50%;
+  animation: drop 1s 1;
+  font-weight: lighter;
+  display: inline-block;
+  text-align: center;
+  display: none;
+}
+
+@keyframes drop{
+  0%{margin-top: -100px}
+}
+
+
+#more_pop_table{
+  display: inline-block;
+}
+
+
+#myblur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  display: none;
+}
+
+
+#contact_form{
+  display: none;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: fixed;
+  top: 10%;
+  text-align: center;
+  background-image: url("pattern.jpg");
+  background-size: cover;
+  color: white;
+  padding: 60px;
+  border: 5px solid #34deeb;
+  border-radius: 5px;
+  align-self:center;
+}
+
+
+#contact_form input,textarea,button{
+  font-family: 'Poppins',sans-serif;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#contact_form input:focus{border: 1px solid white}
+#contact_form textarea:checked{border: 1px solid white}
+
+#contact_form button{
+  background-color: #34deeb;
+  color: white;
+}
+
+#contact_form button:hover{
+  background-color: #c5b8ff;
+  border:1px solid #c5b8ff;
+  color: white;
+  cursor: pointer;
+}
+
+
+#hireme_container{
+  display:flex;
+  flex-direction:row;
+}
+#hireme_image_container{
+  padding: 10px;
+  width: 50%;
+  align-self:center
+}
+
+#hireme_text{
+  padding: 20px;width: 50%;align-self:center
+}
+
+
+
+@media only screen and (max-width:894px){
+
+  #part1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    z-index: 10;
+  }
+
+  #part2{
+    margin-top: 150px;
+    width: 100%;
+    left: 0;
+  }
+
+  #photo{
+    width: 100px;
+    height: 100px;
+  }
+
+  #container{
+    width: 100%;
+  }
+
+
+  #part3{
+    padding: 10px;
+  }
+
+  #photo2{
+    width: 100px;
+    height: 100px;
+  }
+
+  #intro,#education,#skills,#hireme,#projects{
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+  }
+
+  #intro p{font-size: 15px;}
+
+  #skills_container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bolder;
+  }
+
+
+  #hireme_container{
+    display:flex;
+    flex-direction:column;
+  }
+  #hireme_image_container{
+    padding: 10px;
+    width: 90%;
+    align-self:center
+  }
+
+  #hireme_text{
+    padding: 20px;
+    width: 90%;
+    align-self:center
+  }
+
+  footer{
+    width:auto;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin-bottom: 100px;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  #contact_button{
+    padding: 10px;
+  }
+
+}

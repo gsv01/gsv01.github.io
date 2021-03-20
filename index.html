@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gurpreet's Portfolio Website</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <link rel="shortcut icon" type="image/jpg" href="me.png"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+      <div id="part1">
+
+        <div id="photo"></div>
+
+      </div>
+
+      <div id="part2">
+        <div onclick="showInfo()" id="clickme"> Portfolio </div>
+
+
+        <div id="container">
+            <div id="part3"> <div id="photo2"></div> </div>
+
+
+            <div id="intro">
+              <h1>Introduction</h1>
+              <p>
+                Hi  my name is Gurpreet and welcome to my short intro . I am a university dropout
+                from National Kapodestrian University of Athens where I studied
+                 Informatics & Telecommunication for  1 year period . I left my
+                 country because I saw no future hope because of financial crisis .
+                  Now, I live in the UK.  I used to have good hobbies through my
+                  teenage years (making websites and geeky stuff ) which now are
+                   leading me towards a self taught <b>Full Stack Developer </b>and
+                   becoming certified very soon . <br><i>"Changes bring changes "</i>
+              </p>
+            </div>
+
+            <div id="education">
+              <h1>Education</h1>
+        <table>
+            <tr>
+                <th>Epal (Technical High School ) / Diploma</th>
+            </tr>
+            <tr>
+                <td>2016-2018</td>
+            </tr>
+            <tr>
+                <td>I acquired my diploma from my High School as a Software Technician</td>
+            </tr>
+        </table>
+
+
+            <table>
+            <tr>
+                <th>National Kapodistrian University of Athens / Degree</th>
+            </tr>
+            <tr>
+                <td>2018-2019</td>
+            </tr>
+            <tr>
+                <td>Dropped out and moved to UK because I saw more opportunities to grow</td>
+            </tr>
+        </table>
+
+
+            <table>
+            <tr>
+                <th>Full Stack Engineer / Certificate - Diploma</th>
+            </tr>
+            <tr>
+                <td>2020 till now</td>
+            </tr>
+            <tr>
+                <td>Currently doing my online course provided by IT Career Switch</td>
+            </tr>
+        </table>
+
+
+
+        </div>
+
+
+        <div id="skills">
+            <h1>Skills</h1>
+            <div id="skills_container">
+                <div>HTML5</div>
+                <div>CSS3</div>
+                <div>Javascript</div>
+                <div>jQuery</div>
+                <div>React</div>
+                <div>Java</div>
+                <div>C#</div>
+                <div>PHP</div>
+            </div>
+        </div>
+
+        <div id="hireme">
+          <div id="hireme_container">
+            <div id="hireme_image_container" >
+              <img src="hireme.png" id="photo3">
+            </div>
+            <div id="hireme_text">
+              <div >
+                <h3>Need a website expert ? </h3>
+                <p style="font-weight: lighter">
+                  Hire me! Click the button below to send me an email and get in contact. It is never too late to get started with the fabulous idea you have .
+                </p>
+
+
+                <div id="contact_button" onclick="showContactForm()">Contact</div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div id="projects">
+          <h1>My projects</h1>
+          <div id="projects_container">
+              <div style="background-color:red"></div>
+              <div style="background-color:green"></div>
+              <div style="background-color:blue"></div>
+              <div style="background-color:black"></div>
+          </div>
+          <h4>Coming soon...</h4>
+        </div>
+
+
+
+        <!-- Extra -->
+        <div id="more" onclick="openMore()"></div>
+        <div id="myblur" onclick="closeMore()"></div>
+
+
+
+
+
+
+        <div id="more_pop">
+
+          <div>
+            <div><b>Social</b></div>
+            <div onclick="openLink('https://www.facebook.com/nikos.singhvirdi')">Facebook</div>
+            <div onclick="openLink('https://github.com/gsv01')">GitHub</div>
+            <div onclick="openLink('https://www.instagram.com/nick_v101/')">Instagram</div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+          <footer>
+            <h4> 2021 - GSV Portfolio Website Project</h4>
+          </footer>
+
+        </div>
+
+
+      </div>
+
+
+          <div align="center;" style="display:flex;justify-content:center">
+            <div id="contact_form" >
+              <div onclick="hideContactForm()" align='right' style="padding: 20px;cursor:pointer" >Close</div>
+              <div>
+                <form onsubmit="sendMail()">
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <textarea type="text" name="message" placeholder="Message" required></textarea><br><br>
+                <button type="submit">Send</button>
+                <br>
+              </div>
+            </div>
+          </div>
+
+
+
+
+    </body>
+</html>
