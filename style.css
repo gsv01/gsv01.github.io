@@ -189,6 +189,16 @@ body{
   margin-bottom: 20px;
 }
 
+#projects_container a{
+  color: black;
+  text-decoration: none;
+}
+
+
+#projects_container a:hover{
+  opacity: 0.5;
+}
+
 
 #projects h4{
   font-weight: lighter;
