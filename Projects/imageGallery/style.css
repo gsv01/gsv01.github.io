@@ -38,6 +38,7 @@ a:hover{
     height: 50px;
     background-color: black;
     margin: 10px;
+    border: 2px solid white;
 }
 
 
